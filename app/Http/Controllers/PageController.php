@@ -12,7 +12,7 @@ class PageController extends Controller{
         // Session::put('mykey_'.$session_key,$session_key);
         // $mykey          =   Session::get('mykey_'.$session_key);
         // var_dump (session()->all());
-        return view('page.index',['title' => $mykey]);
+        return view('page.index',['title' => 'My Page']);
     }
     
 }
