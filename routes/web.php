@@ -15,3 +15,9 @@
 //     return view('welcome');
 // });
 Route::get('/', 'PageController@getIndex');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/task', 'TaskController');
