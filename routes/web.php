@@ -15,9 +15,8 @@
 //     return view('welcome');
 // });
 Route::get('/', 'PageController@getIndex');
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/home/changepassword','HomeController@showChangePasswordForm');
+Route::post('/home/changepassword','HomeController@changePassword');
 Route::resource('/task', 'TaskController');
